@@ -1,0 +1,25 @@
+{
+  "name": "opencode-image-paste-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "description": "OpenCode plugin for preserving absolute image paths",
+  "exports": {
+    ".": "./dist/index.js",
+    "./plugin": "./dist/plugin.js"
+  },
+  "files": [
+    "dist",
+    "plugin.js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.17.11",
+    "@types/bun": "latest",
+    "typescript": "^5.8.0"
+  }
+}
